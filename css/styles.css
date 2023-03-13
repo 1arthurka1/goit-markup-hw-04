@@ -102,8 +102,19 @@ a {
 }
 /*hero*/
 .hero {
-  background-color: var(--main-title-color);
   padding: 188px 0;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to right,
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7))
+  , url(../images/people-office.jpg);
+  background-color: var(--main-title-color);
 }
 .hero-title {
   text-align: center;
@@ -154,8 +165,28 @@ a {
   margin-bottom: 8px;
 }
 .strategy-item {
+  border-radius: 4px;
+  display: block;
+  height: auto;
+  width: auto;
+  padding: 0;
+}
+.strategy-item {
   width: 264px;
   margin: 0 auto;
+}
+.svg-strategy{
+display: block;
+  display: flex;
+  margin-bottom: 8px;
+}
+.strategy-box{
+  background-color: var(--second-background-color);
+  padding: 24px 100px;
+  width: 264px;
+}
+.strategy-box:not(:last-child) {
+  margin-right: 24px;
 }
 .strategy-item:not(:last-child) {
   margin-right: 24px;
@@ -219,15 +250,82 @@ a {
 .team-item:not(:last-child) {
   margin-right: 24px;
 }
+.team-box{
+  display: flex;
+  margin-top: 8px;
+  padding: 0 16px;
+}
+.item-box{
+  background-color: var(--main-btn-color);
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.item-box:not(:last-child) {
+  margin-right: 24px;
+}
+/* customers */
+.customers{
+  padding: 120px 0;
+}
+.customers-title{
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--main-title-color);
+padding-bottom: 72px;
+}
+.svg-customers{
+  display: block;
+    display: flex;
+  }
+  .customers-box{
+    padding: 16px 32px;
+    width: 168px;
+    border: 1px solid #8E8F99;
+border-radius: 4px;
+  }
+  .customers-box:not(:last-child) {
+    margin-right: 24px;
+  }
 /*footer*/
 .footer {
   background-color: var(--main-title-color);
   padding: 100px 0;
 }
-.footer:not(:last-child) {
+.flex{
   display: flex;
+  gap: 120px;
 }
-
+.footer-media{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--main-background-color);
+}
+.footer-box{
+  background-color: var(--main-text-color);
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.footer-list {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+}
+.footer-box:not(:last-child) {
+  margin-right: 16px;
+}
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;

@@ -303,7 +303,7 @@ a {
 .customers-box:not(:last-child) {
   margin-right: 24px;
 }
-/*footer*/
+/**footer**/
 .footer {
   background-color: var(--main-title-color);
   padding: 100px 0;
